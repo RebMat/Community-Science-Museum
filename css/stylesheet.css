@@ -1,17 +1,29 @@
-/* Fonts */
+/* Global */
 
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+}
 
 /* Header */
 
 header {
+  grid-column: 1 /3;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr auto;
   align-items: center;
   font-family: "Oswald";
   letter-spacing: -0.8px;
   text-transform: uppercase;
   font-weight: bold;
+  border-bottom: 1px solid #25232d;
+}
+
+header a {
+  text-decoration: none;
   color: #25232d;
 }
 
@@ -20,16 +32,27 @@ header {
 }
 
 .logo {
-  max-width: 90px;
+  max-width: 80px;
 }
 
-header p {
+.logo-text {
   font-size: 45px;
+  padding-top: 5px;
 }
 
 nav {
   justify-self: flex-end;
   padding-right: 25px;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.icon-hamburger {
+  display: none;
+}
+
+#hamburger-menu {
+  display: none;
 }
 
 li {
@@ -41,4 +64,103 @@ li {
 li:hover {
   background-color: #c2500d;
   padding: 0px 6px;
+}
+
+/* Footer */
+
+footer {
+  grid-column: 1 / 3;
+  grid-row: 6;
+  background-color: #25232d;
+}
+
+@media only screen and (max-width: 1300px) {
+  /* Header */
+  .logo {
+    max-width: 70px;
+  }
+
+  .logo-text {
+    font-size: 35px;
+  }
+
+  li {
+    font-size: 20px;
+  }
+  /* Footer */
+}
+
+@media only screen and (max-width: 1000px) {
+  /* Header */
+  .logo {
+    max-width: 50px;
+  }
+
+  .logo-text {
+    font-size: 25px;
+  }
+
+  li {
+    font-size: 15px;
+  }
+  /* Footer */
+}
+
+@media only screen and (max-width: 800px) {
+  /* Header */
+  nav {
+    display: none;
+  }
+
+  .icon-hamburger {
+    display: block;
+    width: 20px;
+  }
+  label[for="hamburger-menu"] {
+    justify-self: flex-end;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display: block;
+    grid-area: 2/2;
+    background-color: #ebebeb;
+    padding: 0px;
+    border-radius: 0px 0px 0px 7px;
+    position: absolute;
+    margin-top: 200px;
+  }
+
+  ul {
+    margin: 0px;
+    padding: 10px;
+  }
+
+  li {
+    display: block;
+    padding: 5px;
+    font-family: "helvetica", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+  }
+
+  li:hover {
+    background-color: #ebebeb;
+    padding: 5px;
+  }
+  /* Footer */
+}
+
+@media only screen and (max-width: 450px) {
+  /* Header */
+  .logo {
+    width: 30px;
+  }
+
+  .logo-text {
+    font-size: 13px;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    margin-top: 180px;
+  }
+  /* Footer */
 }
