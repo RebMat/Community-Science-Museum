@@ -5,7 +5,7 @@
 body {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: 80px auto auto auto auto 280px;
 }
 
 /* Header */
@@ -71,7 +71,30 @@ li:hover {
 footer {
   grid-column: 1 / 3;
   grid-row: 6;
+  display: flex;
+  justify-content: space-evenly;
   background-color: #25232d;
+  color: white;
+  font-family: "helvetica", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer h2 {
+  font-size: 18px;
+}
+
+footer p {
+  font-size: 15px;
+  font-weight: lighter;
+  margin: 10px 0px;
+}
+
+.fab {
+  font-size: 35px;
+  color: #f9ffac;
+}
+
+.fab:hover {
+  color: #c2500d;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -87,6 +110,7 @@ footer {
   li {
     font-size: 20px;
   }
+
   /* Footer */
 }
 
@@ -103,10 +127,15 @@ footer {
   li {
     font-size: 15px;
   }
+
   /* Footer */
 }
 
 @media only screen and (max-width: 800px) {
+  body {
+    grid-template-rows: 60px auto auto auto auto 300px;
+  }
+
   /* Header */
   nav {
     display: none;
@@ -115,6 +144,7 @@ footer {
   .icon-hamburger {
     display: block;
     width: 20px;
+    margin-right: 10px;
   }
   label[for="hamburger-menu"] {
     justify-self: flex-end;
@@ -127,7 +157,8 @@ footer {
     padding: 0px;
     border-radius: 0px 0px 0px 7px;
     position: absolute;
-    margin-top: 200px;
+    margin-top: 210px;
+    right: 0px;
   }
 
   ul {
@@ -146,21 +177,27 @@ footer {
     background-color: #ebebeb;
     padding: 5px;
   }
+
   /* Footer */
 }
 
 @media only screen and (max-width: 450px) {
+  body {
+    grid-template-rows: 50px auto auto auto auto 300px;
+  }
+
   /* Header */
   .logo {
     width: 30px;
   }
 
   .logo-text {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   #hamburger-menu:checked ~ nav {
-    margin-top: 180px;
+    margin-top: 200px;
   }
+
   /* Footer */
 }
