@@ -8,6 +8,14 @@ body {
   grid-template-rows: 80px auto 250px;
 }
 
+h1 {
+  font-family: "Oswald", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  font-family: "helvetica", Verdana, Geneva, Tahoma, sans-serif;
+}
+
 /* Header */
 
 header {
@@ -15,7 +23,7 @@ header {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
-  font-family: "Oswald";
+  font-family: "Oswald", Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: -0.8px;
   text-transform: uppercase;
   font-weight: bold;
@@ -78,7 +86,7 @@ footer {
   font-family: "helvetica", Verdana, Geneva, Tahoma, sans-serif;
 }
 
-footer h2 {
+footer h4 {
   font-size: 18px;
 }
 
@@ -89,7 +97,7 @@ footer p {
 }
 
 .fab {
-  font-size: 35px;
+  font-size: 45px;
   color: #f9ffac;
 }
 
@@ -111,21 +119,148 @@ footer p {
   display: grid;
   grid-column: 1 / 3;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
 }
 
 .front-img1 {
   grid-column: 1 / 3;
-  width: 100vw;
-  max-height: 450px;
+  width: 99vw;
+  max-height: 410px;
   object-fit: cover;
   object-position: top;
 }
 
 .button-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 240px;
+}
+
+.button-section:before {
   grid-area: 2 / 1;
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
   background-image: url(../images/front-img2.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
   background-size: cover;
+}
+
+.button-section a {
+  position: relative;
+  font-family: "Oswald", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #25232d;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+.button-section a:hover {
+  background-color: #c2500d;
+}
+
+.explore-section {
+  grid-column: 2;
+  grid-row: 2 / 4;
+  background-color: #f9ffac;
+  font-family: "helvetica", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #c2500d;
+  padding: 20px 40px;
+}
+
+.explore-section h1 {
+  text-transform: uppercase;
+  font-size: 70px;
+  margin: 0px;
+  letter-spacing: -1.5px;
+}
+
+.exhibition-spaces-section {
+  grid-area: 3 / 1;
+  background-color: #3d4f73;
+  display: flex;
+  flex-direction: column;
+  margin-top: -40px;
+}
+
+.exhibition-spaces-section h2 {
+  font-family: "Oswald", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+  color: white;
+  padding: 0px 50px;
+  margin: 46px 0px 30px 0px;
+}
+
+.exhibition-spaces-section p {
+  color: white;
+  font-weight: lighter;
+  font-size: 17px;
+  line-height: 1.3;
+  margin: 0px;
+  padding: 0px 50px;
+}
+
+.exhibition-spaces-section a {
+  font-family: "Helvecita", Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10px;
+  color: white;
+  padding: 0px 50px;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.exhibition-spaces-section a:hover {
+  color: #c2500d;
+}
+
+.special-events-section {
+  grid-column: 1 / 3;
+  grid-row: 4;
+}
+
+.special-events-section h3 {
+  font-family: "Oswald", Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -1.5px;
+  font-size: 50px;
+  color: #25232d;
+  padding: 0px 50px;
+}
+
+.special-events-section p {
+  font-weight: lighter;
+  padding: 0px 50px;
+}
+
+.special-events-section a {
+  font-family: "Helvecita", Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10px;
+  color: #25232d;
+  padding: 0px 50px;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.special-events-section a:hover {
+  color: #c2500d;
 }
 
 @media only screen and (max-width: 1300px) {
