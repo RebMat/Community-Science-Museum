@@ -88,6 +88,7 @@ footer {
 
 footer h4 {
   font-size: 18px;
+  text-align: center;
 }
 
 footer p {
@@ -446,7 +447,7 @@ footer p {
 
 @media only screen and (max-width: 800px) {
   body {
-    grid-template-rows: 60px auto auto auto auto 300px;
+    grid-template-rows: 60px auto 450px;
   }
 
   /* Header */
@@ -511,11 +512,25 @@ footer p {
     margin: 4px 0px;
     text-align: center;
   }
+
+  /* Main - text sizes */
+
+  .main-getinvolved h1 {
+    font-size: 30px;
+  }
+
+  .main-getinvolved h2 {
+    font-size: 25px;
+  }
+
+  .main-getinvolved p {
+    font-size: 15px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
   body {
-    grid-template-rows: 50px auto auto auto auto 300px;
+    grid-template-rows: 50px auto 450px;
   }
 
   /* Header */
@@ -529,5 +544,11 @@ footer p {
 
   #hamburger-menu:checked ~ nav {
     margin-top: 200px;
+  }
+
+  .main-getinvolved h1,
+  .main-getinvolved h2,
+  .main-getinvolved p {
+    padding-left: 10px;
   }
 }
