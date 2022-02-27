@@ -272,7 +272,9 @@ footer p {
   background-color: #fefff0;
 }
 
-.main-visit h1 {
+.main-visit h1,
+.main-getinvolved h1,
+.main-events h1 {
   color: #c2500d;
   text-transform: uppercase;
   font-size: 50px;
@@ -281,7 +283,9 @@ footer p {
   margin-top: 40px;
 }
 
-.main-visit h2 {
+.main-visit h2,
+.main-getinvolved h2,
+.main-events h2 {
   color: #c2500d;
   text-transform: uppercase;
   font-family: "Oswald", Verdana, Geneva, Tahoma, sans-serif;
@@ -291,7 +295,9 @@ footer p {
   margin: 35px 0px 0px 0px;
 }
 
-.main-visit p {
+.main-visit p,
+.main-getinvolved p,
+.main-events p {
   padding-left: 80px;
   font-weight: lighter;
   font-size: 17px;
@@ -300,6 +306,7 @@ footer p {
 .visit-text {
   grid-column: 1;
   grid-row: 1 / 3;
+  margin-bottom: 50px;
 }
 
 .visit-pictures {
@@ -318,6 +325,26 @@ footer p {
 .museum-building {
   max-width: 450px;
   margin-top: 60px;
+}
+
+/* Get Involved */
+
+.main-getinvolved {
+  background-color: #fefff0;
+  grid-column: 1 /3;
+  padding-bottom: 50px;
+}
+
+.main-getinvolved p {
+  max-width: 800px;
+}
+
+/* Events */
+
+.main-events img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
 }
 
 @media only screen and (max-width: 1300px) {
