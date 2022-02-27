@@ -4,7 +4,6 @@
 
 body {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-template-rows: 80px auto 250px;
 }
 
@@ -231,16 +230,6 @@ footer p {
   color: #c2500d;
 }
 
-.special-events-section h3,
-p,
-a {
-  grid-area: 4 / 1;
-}
-
-.special-events-section img {
-  grid-area: 4 / 2;
-}
-
 .special-events-section h3 {
   font-family: "Oswald", Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
@@ -272,6 +261,63 @@ a {
   width: 250px;
   height: 250px;
   object-fit: cover;
+}
+
+/* Visit */
+
+.main-visit {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: #fefff0;
+}
+
+.main-visit h1 {
+  color: #c2500d;
+  text-transform: uppercase;
+  font-size: 50px;
+  letter-spacing: -1.5px;
+  padding-left: 80px;
+  margin-top: 40px;
+}
+
+.main-visit h2 {
+  color: #c2500d;
+  text-transform: uppercase;
+  font-family: "Oswald", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  padding-left: 80px;
+  letter-spacing: -1.5px;
+  margin: 35px 0px 0px 0px;
+}
+
+.main-visit p {
+  padding-left: 80px;
+  font-weight: lighter;
+  font-size: 17px;
+}
+
+.visit-text {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+.visit-pictures {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map {
+  max-width: 450px;
+  margin-top: 50px;
+}
+
+.museum-building {
+  max-width: 450px;
+  margin-top: 60px;
 }
 
 @media only screen and (max-width: 1300px) {
