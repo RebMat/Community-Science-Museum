@@ -13,6 +13,7 @@ h1 {
 
 p {
   font-family: "helvetica", Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
 }
 
 /* Header */
@@ -93,6 +94,7 @@ footer p {
   font-size: 15px;
   font-weight: lighter;
   margin: 10px 0px;
+  line-height: normal;
 }
 
 .fab {
@@ -341,11 +343,76 @@ footer p {
 
 /* Events */
 
+.main-events {
+  display: grid;
+  grid-template-rows: auto 1fr 1fr 1fr;
+}
+
+.main-events h2 {
+  margin: 0px;
+}
+
+.main-events p {
+  margin-top: 60px;
+  max-width: 600px;
+  font-weight: lighter;
+  font-size: 17px;
+}
+
 .main-events img {
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   object-fit: cover;
 }
+
+.aeronautics-section {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.aeronautics-section h2,
+.aeronautics-section p {
+  grid-area: 1 / 2;
+}
+
+.pic-aeronautics {
+  grid-area: 1 / 1;
+  margin: 0px 0px 50px 80px;
+}
+
+.nightatmusem-section {
+  display: grid;
+  grid-row: 3;
+  grid-template-columns: auto 1fr;
+}
+
+.nightatmusem-section h2,
+.nightatmusem-section p {
+  grid-area: 1 / 2;
+}
+
+.pic-museumatnight {
+  grid-area: 1 / 1;
+  margin: 0px 0px 50px 80px;
+}
+
+.energetica-section {
+  display: grid;
+  grid-row: 4;
+  grid-template-columns: auto 1fr;
+}
+
+.energetica-section h2,
+.energetica-section p {
+  grid-area: 1 / 2;
+}
+
+.pic-energetica {
+  grid-area: 1 / 1;
+  margin: 0px 0px 50px 80px;
+}
+
+/* Exhibits */
 
 @media only screen and (max-width: 1300px) {
   /* Header */
