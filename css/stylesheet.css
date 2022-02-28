@@ -5,6 +5,7 @@
 body {
   display: grid;
   grid-template-rows: 80px auto 250px;
+  grid-template-columns: 1fr;
 }
 
 h1 {
@@ -346,6 +347,11 @@ footer p {
 .main-events {
   display: grid;
   grid-template-rows: auto 1fr 1fr 1fr;
+  grid-template-columns: auto 1fr;
+}
+
+.main-events h1 {
+  grid-column: 1 / 3;
 }
 
 .main-events h2 {
@@ -362,53 +368,7 @@ footer p {
   height: 250px;
   width: 250px;
   object-fit: cover;
-}
-
-.aeronautics-section {
-  display: grid;
-  grid-template-columns: auto 1fr;
-}
-
-.aeronautics-section h2,
-.aeronautics-section p {
-  grid-area: 1 / 2;
-}
-
-.pic-aeronautics {
-  grid-area: 1 / 1;
-  margin: 0px 0px 50px 80px;
-}
-
-.nightatmuseum-section {
-  display: grid;
-  grid-row: 3;
-  grid-template-columns: auto 1fr;
-}
-
-.nightatmuseum-section h2,
-.nightatmuseum-section p {
-  grid-area: 1 / 2;
-}
-
-.pic-museumatnight {
-  grid-area: 1 / 1;
-  margin: 0px 0px 50px 80px;
-}
-
-.energetica-section {
-  display: grid;
-  grid-row: 4;
-  grid-template-columns: auto 1fr;
-}
-
-.energetica-section h2,
-.energetica-section p {
-  grid-area: 1 / 2;
-}
-
-.pic-energetica {
-  grid-area: 1 / 1;
-  margin: 0px 0px 50px 80px;
+  margin: 0px 0px 40px 80px;
 }
 
 /* Exhibits */
