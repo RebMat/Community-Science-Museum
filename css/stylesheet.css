@@ -353,7 +353,6 @@ footer p {
 }
 
 .main-events p {
-  margin-top: 60px;
   max-width: 600px;
   font-weight: lighter;
   font-size: 17px;
@@ -380,14 +379,14 @@ footer p {
   margin: 0px 0px 50px 80px;
 }
 
-.nightatmusem-section {
+.nightatmuseum-section {
   display: grid;
   grid-row: 3;
   grid-template-columns: auto 1fr;
 }
 
-.nightatmusem-section h2,
-.nightatmusem-section p {
+.nightatmuseum-section h2,
+.nightatmuseum-section p {
   grid-area: 1 / 2;
 }
 
@@ -500,8 +499,6 @@ footer p {
     padding: 5px;
   }
 
-  /* Footer */
-
   footer {
     flex-direction: column;
     grid-row: inherit;
@@ -522,17 +519,20 @@ footer p {
   }
 
   .main-getinvolved h1,
-  .visit-text h1 {
+  .visit-text h1,
+  .main-events h1 {
     font-size: 30px;
   }
 
   .main-getinvolved h2,
-  .visit-text h2 {
+  .visit-text h2,
+  .main-events h2 {
     font-size: 25px;
   }
 
   .main-getinvolved p,
-  .visit-text p {
+  .visit-text p,
+  .main-events p {
     font-size: 15px;
   }
 
@@ -553,6 +553,10 @@ footer p {
 
   .museum-building {
     margin-bottom: 10px;
+  }
+
+  .main-events {
+    grid-template-columns: 1fr;
   }
 }
 
