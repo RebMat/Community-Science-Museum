@@ -88,7 +88,6 @@ footer {
 
 footer h4 {
   font-size: 18px;
-  text-align: center;
 }
 
 footer p {
@@ -443,6 +442,15 @@ footer p {
   li {
     font-size: 15px;
   }
+
+  .map,
+  .museum-building {
+    max-width: 300px;
+  }
+
+  .visit-text h1 {
+    font-size: 40px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -499,12 +507,12 @@ footer p {
     grid-row: inherit;
   }
 
-  footer h2,
+  footer h4,
   .social-media {
     text-align: center;
   }
 
-  footer h2 {
+  footer h4 {
     margin: 20px 0px 8px 0px;
   }
 
@@ -513,18 +521,38 @@ footer p {
     text-align: center;
   }
 
-  /* Main - text sizes */
-
-  .main-getinvolved h1 {
+  .main-getinvolved h1,
+  .visit-text h1 {
     font-size: 30px;
   }
 
-  .main-getinvolved h2 {
+  .main-getinvolved h2,
+  .visit-text h2 {
     font-size: 25px;
   }
 
-  .main-getinvolved p {
+  .main-getinvolved p,
+  .visit-text p {
     font-size: 15px;
+  }
+
+  .main-visit {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .visit-text {
+    grid-column: 1;
+    grid-row: 1 / 3;
+  }
+
+  .visit-pictures {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .museum-building {
+    margin-bottom: 10px;
   }
 }
 
@@ -548,7 +576,10 @@ footer p {
 
   .main-getinvolved h1,
   .main-getinvolved h2,
-  .main-getinvolved p {
+  .main-getinvolved p,
+  .visit-text h1,
+  .visit-text h2,
+  .visit-text p {
     padding-left: 10px;
   }
 }
