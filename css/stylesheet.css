@@ -534,24 +534,15 @@ footer p {
     text-align: center;
   }
 
-  .main-getinvolved h1,
-  .visit-text h1,
-  .main-events h1,
-  .main-explore h1 {
+  .media800 h1 {
     font-size: 30px;
   }
 
-  .main-getinvolved h2,
-  .visit-text h2,
-  .main-events h2,
-  .main-explore h2 {
+  .media800 h2 {
     font-size: 25px;
   }
 
-  .main-getinvolved p,
-  .visit-text p,
-  .main-events p,
-  .main-explore p {
+  .media800 p {
     font-size: 15px;
   }
 
