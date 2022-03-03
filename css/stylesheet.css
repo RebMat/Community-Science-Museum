@@ -121,12 +121,12 @@ footer p {
   display: grid;
   grid-column: 1 / 3;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: auto;
 }
 
 .front-img1 {
   grid-column: 1 / 3;
-  width: 99vw;
+  width: 100%;
   max-height: 410px;
   object-fit: cover;
   object-position: top;
@@ -178,7 +178,6 @@ footer p {
   grid-column: 2;
   grid-row: 2 / 4;
   background-color: #fcffd0;
-  font-family: "helvetica", Verdana, Geneva, Tahoma, sans-serif;
   font-weight: lighter;
   font-size: 17px;
   line-height: 1.5;
@@ -280,7 +279,7 @@ footer p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  background-color: #fefff0;
+  background-color: #fcffd0;
 }
 
 .main-visit h1,
@@ -344,7 +343,7 @@ footer p {
 /* Get Involved */
 
 .main-getinvolved {
-  background-color: #fefff0;
+  background-color: #fcffd0;
   grid-column: 1 /3;
   padding-bottom: 50px;
 }
@@ -661,7 +660,6 @@ footer p {
     grid-template-rows: 50px auto 450px;
   }
 
-  /* Header */
   .logo {
     width: 30px;
   }
