@@ -233,7 +233,7 @@ footer p {
   color: #c2500d;
 }
 
-.special-events-section h3 {
+.special-events-text h2 {
   font-family: "Oswald", Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
   letter-spacing: -1.5px;
@@ -242,12 +242,12 @@ footer p {
   padding: 0px 50px;
 }
 
-.special-events-section p {
+.special-events-text p {
   font-weight: lighter;
   padding: 0px 50px;
 }
 
-.special-events-section a {
+.special-events-text a {
   font-family: "Helvecita", Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 10px;
   color: #25232d;
@@ -256,17 +256,25 @@ footer p {
   font-style: italic;
 }
 
-.special-events-section a:hover {
+.special-events-text a:hover {
   color: #c2500d;
 }
+.special-events-pics {
+  margin: 0 auto;
+}
 
-.special-events-section img {
+.special-events-pics img {
   width: 250px;
   height: 250px;
   object-fit: cover;
+  margin: 30px auto;
 }
 
-/* Visit */
+.special-events-pic1 {
+  padding-right: 25px;
+}
+
+/* Visit - Explore - Exhibits - Events - Get Involved */
 
 .main-visit {
   display: grid;
@@ -277,7 +285,8 @@ footer p {
 
 .main-visit h1,
 .main-getinvolved h1,
-.main-events h1 {
+.main-events h1,
+.main-explore h1 {
   color: #c2500d;
   text-transform: uppercase;
   font-size: 50px;
@@ -288,7 +297,8 @@ footer p {
 
 .main-visit h2,
 .main-getinvolved h2,
-.main-events h2 {
+.main-events h2,
+.main-explore h2 {
   color: #c2500d;
   text-transform: uppercase;
   font-family: "Oswald", Verdana, Geneva, Tahoma, sans-serif;
@@ -300,7 +310,8 @@ footer p {
 
 .main-visit p,
 .main-getinvolved p,
-.main-events p {
+.main-events p,
+.main-explore p {
   padding-left: 80px;
   font-weight: lighter;
   font-size: 17px;
@@ -342,8 +353,6 @@ footer p {
   max-width: 800px;
 }
 
-/* Events */
-
 .main-events {
   display: grid;
   grid-template-rows: auto 1fr 1fr 1fr;
@@ -371,8 +380,55 @@ footer p {
   margin: 0px 0px 40px 80px;
 }
 
-/* Exhibits */
+.main-explore {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 280px 1fr 1fr;
+}
 
+.main-explore h1 {
+  grid-column: 1 / 3;
+}
+
+.forchildren-text {
+  grid-area: 2 / 1;
+}
+
+.forchildren-text2 {
+  grid-area: 2 / 2;
+}
+
+.pic-mammoth {
+  grid-column: 1 / 3;
+  grid-row: 3;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: top;
+  margin: 0 auto;
+}
+
+.forchildren-text,
+.forchildren-text2,
+.forteachers-text,
+.researchers-text {
+  max-width: 600px;
+}
+
+.forchildren-text2 h2,
+.researchers-text h2,
+.forchildren-text2 p,
+.researchers-text p {
+  padding-left: 20px;
+}
+
+.forchildren-text2 p {
+  margin-top: 75px;
+}
+
+.forchildren-text h2 {
+  margin-top: 0px;
+}
 @media only screen and (max-width: 1300px) {
   /* Header */
   .logo {
@@ -480,19 +536,22 @@ footer p {
 
   .main-getinvolved h1,
   .visit-text h1,
-  .main-events h1 {
+  .main-events h1,
+  .main-explore h1 {
     font-size: 30px;
   }
 
   .main-getinvolved h2,
   .visit-text h2,
-  .main-events h2 {
+  .main-events h2,
+  .main-explore h2 {
     font-size: 25px;
   }
 
   .main-getinvolved p,
   .visit-text p,
-  .main-events p {
+  .main-events p,
+  .main-explore p {
     font-size: 15px;
   }
 
@@ -517,6 +576,46 @@ footer p {
 
   .main-events {
     grid-template-columns: 1fr;
+  }
+
+  .main-explore {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .main-explore h1 {
+    grid-row: 1;
+  }
+
+  .forchildren-text {
+    grid-area: 2 / 1;
+  }
+
+  .forchildren-text2 {
+    grid-area: 3 / 1;
+  }
+
+  .forchildren-text2 p {
+    padding-left: 80px;
+    margin-top: 0px;
+  }
+
+  .pic-mammoth {
+    grid-area: 4 / 1;
+    max-width: 500px;
+  }
+
+  .forteachers-text {
+    grid-area: 5 / 1;
+  }
+
+  .researchers-text {
+    grid-area: 6 / 1;
+  }
+
+  .researchers-text h2,
+  .researchers-text p {
+    padding-left: 80px;
   }
 }
 
@@ -543,7 +642,10 @@ footer p {
   .main-getinvolved p,
   .visit-text h1,
   .visit-text h2,
-  .visit-text p {
+  .visit-text p,
+  .main-explore h1,
+  .main-explore h2,
+  .main-explore p {
     padding-left: 10px;
   }
 }
