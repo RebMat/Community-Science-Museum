@@ -578,20 +578,24 @@ footer p {
     grid-template-columns: 1fr;
   }
 
-  .main-explore {
+  .main-explore,
+  .main-events {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
 
-  .main-explore h1 {
+  .main-explore h1,
+  .main-events h1 {
     grid-row: 1;
   }
 
-  .forchildren-text {
+  .forchildren-text,
+  .aeronautics-text {
     grid-area: 2 / 1;
   }
 
-  .forchildren-text2 {
+  .forchildren-text2,
+  .pic-aeronautics {
     grid-area: 3 / 1;
   }
 
@@ -600,17 +604,24 @@ footer p {
     margin-top: 0px;
   }
 
-  .pic-mammoth {
+  .pic-mammoth,
+  .nightatmuseum-text {
     grid-area: 4 / 1;
     max-width: 500px;
   }
 
-  .forteachers-text {
+  .forteachers-text,
+  .pic-museumatnight {
     grid-area: 5 / 1;
   }
 
-  .researchers-text {
+  .researchers-text,
+  .energetica-text {
     grid-area: 6 / 1;
+  }
+
+  .pic-energetica {
+    grid-area: 7 / 1;
   }
 
   .researchers-text h2,
