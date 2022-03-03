@@ -121,7 +121,6 @@ footer p {
   display: grid;
   grid-column: 1 / 3;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
 }
 
 .front-img1 {
@@ -278,7 +277,6 @@ footer p {
 .main-visit {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   background-color: #fcffd0;
 }
 
@@ -354,7 +352,6 @@ footer p {
 
 .main-events {
   display: grid;
-  grid-template-rows: auto 1fr 1fr 1fr;
   grid-template-columns: auto 1fr;
 }
 
@@ -497,6 +494,7 @@ footer p {
     border-radius: 0px 0px 0px 7px;
     position: absolute;
     right: 0px;
+    margin-top: 208px;
   }
 
   ul {
@@ -549,7 +547,6 @@ footer p {
 
   .main-visit {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
   }
 
   .visit-text {
@@ -574,7 +571,6 @@ footer p {
   .main-explore,
   .main-events {
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
   }
 
   .front-img1 .main-exhibits h1,
@@ -652,15 +648,19 @@ footer p {
   .exhibition-spaces-section a {
     margin: 30px 0px;
   }
+
+  .special-events-text {
+    margin-bottom: 20px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
   body {
-    grid-template-rows: 55px auto 450px;
+    grid-template-rows: 60px auto 450px;
   }
 
   .logo {
-    width: 30px;
+    width: 35px;
   }
 
   .logo-text {
@@ -668,7 +668,7 @@ footer p {
   }
 
   #hamburger-menu:checked ~ nav {
-    margin-top: 200px;
+    margin-top: 208px;
   }
 
   .main-events img {
@@ -688,5 +688,9 @@ footer p {
 
   .special-events-pic1 {
     padding-right: 0px;
+  }
+
+  .pic-mammoth {
+    height: 200px;
   }
 }
