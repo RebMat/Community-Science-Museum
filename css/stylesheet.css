@@ -656,7 +656,7 @@ footer p {
 
 @media only screen and (max-width: 450px) {
   body {
-    grid-template-rows: 50px auto 450px;
+    grid-template-rows: 55px auto 450px;
   }
 
   .logo {
