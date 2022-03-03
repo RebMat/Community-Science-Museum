@@ -87,7 +87,7 @@ footer {
   font-family: "helvetica", Verdana, Geneva, Tahoma, sans-serif;
 }
 
-footer h4 {
+footer h3 {
   font-size: 18px;
 }
 
@@ -401,7 +401,7 @@ footer p {
 .pic-mammoth {
   grid-column: 1 / 3;
   grid-row: 3;
-  width: 100%;
+  width: 90%;
   height: 350px;
   object-fit: cover;
   object-position: top;
@@ -520,12 +520,12 @@ footer p {
     grid-row: inherit;
   }
 
-  footer h4,
+  footer h3,
   .social-media {
     text-align: center;
   }
 
-  footer h4 {
+  footer h3 {
     margin: 20px 0px 8px 0px;
   }
 
@@ -575,16 +575,19 @@ footer p {
     grid-template-rows: auto;
   }
 
+  .main-exhibits h1,
   .main-explore h1,
   .main-events h1 {
     grid-row: 1;
   }
 
+  .cosmology-text,
   .forchildren-text,
   .aeronautics-text {
     grid-area: 2 / 1;
   }
 
+  .pic-cosmology,
   .forchildren-text2,
   .pic-aeronautics {
     grid-area: 3 / 1;
@@ -595,22 +598,26 @@ footer p {
     margin-top: 0px;
   }
 
+  .evolution-text,
   .pic-mammoth,
   .nightatmuseum-text {
     grid-area: 4 / 1;
     max-width: 500px;
   }
 
+  .pic-evolution,
   .forteachers-text,
   .pic-museumatnight {
     grid-area: 5 / 1;
   }
 
+  .biology-text,
   .researchers-text,
   .energetica-text {
     grid-area: 6 / 1;
   }
 
+  .pic-biology,
   .pic-energetica {
     grid-area: 7 / 1;
   }
@@ -618,6 +625,22 @@ footer p {
   .researchers-text h2,
   .researchers-text p {
     padding-left: 80px;
+  }
+
+  .robotics-text {
+    grid-area: 8 / 1;
+  }
+
+  .pic-robotics {
+    grid-area: 9 / 1;
+  }
+
+  .ecology-text {
+    grid-area: 10 / 1;
+  }
+
+  .pic-ecology {
+    grid-area: 11 / 1;
   }
 }
 
