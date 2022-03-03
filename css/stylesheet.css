@@ -648,15 +648,13 @@ footer p {
     margin-top: 200px;
   }
 
-  .main-getinvolved h1,
-  .main-getinvolved h2,
-  .main-getinvolved p,
-  .visit-text h1,
-  .visit-text h2,
-  .visit-text p,
-  .main-explore h1,
-  .main-explore h2,
-  .main-explore p {
+  .main-events img {
+    margin-left: 10px;
+  }
+
+  .media450 h1,
+  .media450 h2,
+  .media450 p {
     padding-left: 10px;
   }
 }
