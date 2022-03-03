@@ -177,7 +177,7 @@ footer p {
 .explore-section {
   grid-column: 2;
   grid-row: 2 / 4;
-  background-color: #f9ffac;
+  background-color: #fcffd0;
   font-family: "helvetica", Verdana, Geneva, Tahoma, sans-serif;
   font-weight: lighter;
   font-size: 17px;
