@@ -489,7 +489,6 @@ footer p {
 
   #hamburger-menu:checked ~ nav {
     display: block;
-    grid-area: 2/2;
     background-color: #ebebeb;
     padding: 0px;
     border-radius: 0px 0px 0px 7px;
