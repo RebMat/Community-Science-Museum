@@ -137,22 +137,15 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
 }
 
 .button-section:before {
-  grid-area: 2 / 1;
   content: " ";
-  display: block;
   position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   opacity: 0.1;
   background-image: url(../images/front-img2.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 0;
   background-size: cover;
 }
 
@@ -426,6 +419,7 @@ footer p {
 .forchildren-text h2 {
   margin-top: 0px;
 }
+
 @media only screen and (max-width: 1300px) {
   /* Header */
   .logo {
