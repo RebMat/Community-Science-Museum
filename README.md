@@ -20,13 +20,15 @@ The target audience is primary and middle school children (7-15) and families wi
 
 ### Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
-
-1. Clone the repo:
+Clone the repo:
 
 ```bash
 https://github.com/RebMat/Community-Science-Museum.git
 ```
+
+### Running 
+
+Use VS code with live server extention to see the website live. 
 
 ## Contact
 
