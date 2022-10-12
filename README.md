@@ -1,25 +1,19 @@
 # Community Science Museum
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![Skjermbilde 2022-10-06 kl  20 46 38](https://user-images.githubusercontent.com/94296711/195366793-74220369-01fd-4dc2-8b3c-625f703e5185.png)
 
-A simple overview of the use/purpose of the project.
+A website for a local science museum. 
+My first semester project. 
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+This project reflects my creative and technical knowledge and skills based on what I learned during my first semester studying front-end development.  
 
-You can add some bullet points if you'd like to:
-
-- List item 1
-- List item 2
-- List item 3
+The target audience is primary and middle school children (7-15) and families with young children. The website is designed to appeal to the target audience: bright colors, big images, and font sizes.   
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+- VS Code 
 
 ## Getting Started
 
@@ -55,11 +49,7 @@ Here you can detail any information you want to provide regarding contributing t
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
-
-[My Twitter page](www.twitter.com)
-
-[My LinkedIn page](www.linkedin.com)
+[My LinkedIn page](https://www.linkedin.com/in/rebecca-mathisen/)
 
 ## License
 
