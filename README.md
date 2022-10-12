@@ -9,11 +9,12 @@ My first semester project.
 
 This project reflects my creative and technical knowledge and skills based on what I learned during my first semester studying front-end development.  
 
-The target audience is primary and middle school children (7-15) and families with young children. The website is designed to appeal to the target audience: bright colors, big images, and font sizes.   
+The target audience is primary and middle school children (7-15) and families with young children. The website is designed to appeal to the target audience: bright colors, big images and font sizes.
 
 ## Built With
 
-- VS Code 
+- HTML 
+- CSS
 
 ## Getting Started
 
@@ -27,11 +28,8 @@ This is where you list how to get the project started. It typically just include
 https://github.com/RebMat/Community-Science-Museum.git
 ```
 
-## Contributing
-
-Feel free to contribute :woman_cartwheeling:
-
 ## Contact
 
 [My LinkedIn page](https://www.linkedin.com/in/rebecca-mathisen/)
+
 
